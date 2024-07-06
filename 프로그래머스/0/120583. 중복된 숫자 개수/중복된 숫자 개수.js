@@ -1,3 +1,10 @@
 function solution(array, n) {
-    return array.filter(num => num === n).length;
+    let newArr = 0;
+    
+    for(i = 0; i < array.length; i++) {
+       if(array[i] === n) {
+           newArr++
+       }
+    }
+    return newArr
 }
