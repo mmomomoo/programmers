@@ -1,7 +1,8 @@
-function solution(numbers) {
+function solution(numbers){
     let sum = 0;
-    for(i=0; i < numbers.length; i++){
-          sum += numbers[i];
+    for(let number of numbers){
+        sum += number
     }
-    return sum / numbers.length;
-}
+    
+    return sum/numbers.length;
+}  
