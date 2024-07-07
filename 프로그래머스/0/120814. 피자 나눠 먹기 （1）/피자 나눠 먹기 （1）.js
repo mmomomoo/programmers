@@ -1,6 +1,4 @@
 function solution(n) {
-    const piecesPerPizza = 7;
-    const pizzasNeeded = Math.ceil(n / piecesPerPizza);  
-    
-    return pizzasNeeded;
+   const pizzaCount = Math.ceil(n / 7); 
+    return pizzaCount;
 }
