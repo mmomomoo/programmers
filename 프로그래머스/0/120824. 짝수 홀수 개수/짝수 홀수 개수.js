@@ -1,11 +1,12 @@
-function solution(num_list) {
-    let counts = [0, 0];
-    for (let num of num_list) {
-      if(num % 2 === 0) {
-        counts[0]++;
-    } else {
-        counts[1]++;
+function solution(num_list) { 
+    let odd = 0;
+    let even = 0;
+    for (const element of num_list) {
+        if (element % 2 === 1) {
+            odd ++;
+        } else if (element % 2 === 0) {
+            even ++;
+        }
     }
-}
-    return counts;
+    return [even, odd];
 }
