@@ -1,8 +1,10 @@
 function solution(money) {
-    let price = 5500;
-    let maxCoffee = Math.floor( money / price );
-    let remainingMoney = money - (maxCoffee * price);
+    let result = [];
+    const oneCup = 5500;
+    const maxCup = Math.trunc(money/oneCup);
+    const Change =  money - maxCup * oneCup;
     
-    
-    return [maxCoffee, remainingMoney];
+    result.push(maxCup);
+    result.push(Change);
+    return result;
 }
