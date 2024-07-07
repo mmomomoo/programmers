@@ -1,7 +1,7 @@
 function solution(n) {
-    const result = [];
-    for(i = 1; i <= n; i+=2) {
-        result.push(i);
+    let odd = [];
+    for(let i = 1; i <= n; i += 2){
+      odd.push(i);
     }
-    return result;
+    return odd;
 }
