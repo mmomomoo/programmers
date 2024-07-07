@@ -1,10 +1,16 @@
 function solution(price) {
-    let discount = (price >= 500000) ?  0.2 :
-                   (price >= 300000) ?  0.1 :
-                   (price >= 100000) ?  0.05 :
-                   0;
-    
-    let finalPrice = price * (1 - discount);
-    return Math.floor(finalPrice);
-    
+    let cost = 0;
+    if(price >= 500000){
+        cost +=  Math.floor(price * 0.8) 
+    } else if (price >= 300000) {
+       cost +=  Math.floor(price * 0.9)
+    } else if (price >= 100000) {
+       cost += Math.floor(price * 0.95)
+    } else if (price < 100000) {
+       cost += price; 
+    }
+    return cost;
 }
+
+
+
