@@ -1,12 +1,18 @@
-function solution(rsp) {
-    const winCase = {
-        '2' : '0',
-        '0' : '5',
-        '5' : '2',
-    }
-    let result = '';
-    for (let char of rsp) {
-       result += winCase[char];
-    }
+function solution(rsp){
+  let result = '';
+  const reqMap = {
+      '2' : '0',
+      '0' : '5',
+      '5' : '2'
+  }
+  for(const char of rsp){
+      result += reqMap[char];
+  }
     return result;
 }
+      
+      
+      
+      
+      
+  
