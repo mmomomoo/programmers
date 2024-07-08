@@ -1,7 +1,6 @@
 function solution(array) {
+    let answer = 0;
     array.sort((a, b) => a - b);
-    const middleIndex = Math.floor(array.length / 2)
-    
-    
-    return array[middleIndex];
+    answer = array[Math.floor(array.length / 2)];
+    return answer;
 }
