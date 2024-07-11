@@ -1,7 +1,7 @@
-function solution(arr) {
-    let answer = 0;
-    for (let i = 0; i < arr.length;  i++){
-        answer += arr[i];
+const solution = arr => {
+    let sum = 0;
+    for(let arrRoop of arr){
+        sum += arrRoop
     } 
-    return answer/ arr.length ;
+    return sum/arr.length
 }
